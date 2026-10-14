@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Very Simple HTML5 Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Very Simple HTML5 Site</h1>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#elements">Elements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article id="about">
+      <h2>About this site</h2>
+      <p>A one-page site built only with semantic HTML5 elements and a small stylesheet. No frameworks, no JavaScript.</p>
+      <figure>
+        <svg viewBox="0 0 120 60" role="img" aria-label="HTML5 shield">
+          <rect width="120" height="60" rx="8" fill="#e34f26" />
+          <text x="60" y="38" text-anchor="middle" font-size="22" fill="#fff" font-family="sans-serif">HTML5</text>
+        </svg>
+        <figcaption>Inline SVG is part of HTML5 too.</figcaption>
+      </figure>
+    </article>
+
+    <section id="elements">
+      <h2>Elements used</h2>
+      <table>
+        <thead><tr><th>Element</th><th>Purpose</th></tr></thead>
+        <tbody>
+          <tr><td><code>&lt;header&gt;</code></td><td>Introductory content and navigation</td></tr>
+          <tr><td><code>&lt;nav&gt;</code></td><td>Major navigation links</td></tr>
+          <tr><td><code>&lt;main&gt;</code></td><td>The dominant content of the page</td></tr>
+          <tr><td><code>&lt;article&gt;</code></td><td>Self-contained composition</td></tr>
+          <tr><td><code>&lt;section&gt;</code></td><td>Thematic grouping of content</td></tr>
+          <tr><td><code>&lt;aside&gt;</code></td><td>Tangential content</td></tr>
+          <tr><td><code>&lt;footer&gt;</code></td><td>Footer for its nearest section</td></tr>
+        </tbody>
+      </table>
+      <details>
+        <summary>What about &lt;div&gt;?</summary>
+        <p>Use it when no semantic element fits. It carries no meaning on its own.</p>
+      </details>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="#" method="post">
+        <label>Email <input type="email" name="email" required></label>
+        <label>Message <textarea name="message" rows="3" required></textarea></label>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <aside>
+    <p>Last updated <time datetime="2026-10-13">October 13, 2026</time>.</p>
+  </aside>
+
+  <footer>
+    <p>&copy; Ziad0dev</p>
+  </footer>
+</body>
+</html>
